@@ -4,7 +4,7 @@ const concat        = require('gulp-concat');
 const uglify        = require('gulp-uglify-es').default;
 const sass          = require('gulp-sass');
 const autoprefixer  = require('gulp-autoprefixer');
-const cleancss      = require('gulp-clean-css');
+// const cleancss      = require('gulp-clean-css');
 const imagemin      = require('gulp-imagemin');
 const newer         = require('gulp-newer');
 const del           = require('del');
@@ -20,8 +20,7 @@ function browsersync() {
 
 function scripts() {
   return src([
-    'node_modules/jquery/dist/jquery.min.js',
-    
+   
     'app/js/app.js',
   ])
   .pipe(concat('app.min.js'))
@@ -32,15 +31,15 @@ function scripts() {
 
 function styles() {
   return src([
-  'app/scss/style.scss',
   'node_modules/normalize.css/normalize.css',
+  'app/scss/style.scss',
   ])
   .pipe(sass({
     outputStyle: "expanded"
     }))
   .pipe(concat('app.min.css'))
   .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
-  .pipe(cleancss(( {lvel: {1: {specailComents: 0} } } )))
+  // .pipe(cleancss(( {lvel: {1: {specailComents: 0} } } )))
   .pipe(dest('app/css/'))
   .pipe(browserSync.stream())
 }
