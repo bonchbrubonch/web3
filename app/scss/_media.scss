@@ -1,0 +1,334 @@
+@media (min-width: 2000px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container,
+  .header .container {
+    max-width: 80%;
+  }
+
+  .intro__inner {
+    justify-content: space-between;
+  }
+
+  .news__img {
+    height: 35vh;
+  }
+
+  .header__logo,
+  .footer__logo {
+    max-width: 9vw;
+    height: 6vh;
+  }
+
+  .header__btn {
+    width: 80px;
+    height: 30px;
+  }
+  .header__btn.active span {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+  }
+  .header__btn::after {
+    width: 49px;
+  }
+
+  .intro__left {
+    padding: 10% 0 0 0;
+    max-width: 50%;
+  }
+
+  .intro__down {
+    width: 10vw;
+    height: 10vh;
+  }
+
+  .intro__title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 2500px) {
+  html {
+    font-size: 28px;
+  }
+
+  .container {
+    max-width: 80%;
+  }
+
+  .intro__right {
+    top: 30%;
+    right: 40%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .intro__inner::before {
+    bottom: 0;
+  }
+
+  .intro__text {
+    font-size: 35rem;
+  }
+
+  .intro__right {
+    left: 0;
+    top: 10%;
+    min-width: 420px;
+    height: 414px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__logo {
+    margin: 0 40px 0 auto;
+  }
+
+  .header__contact {
+    margin-left: 0;
+  }
+
+  .intro__title {
+    font-size: 4rem;
+  }
+
+  .intro__text {
+    font-size: 28rem;
+  }
+
+  .intro__right {
+
+    min-width: 345px;
+    height: 325px;
+  }
+
+  .aprroach__item {
+    width: calc(50% - 30px);
+  }
+
+  .news__list {
+    margin: 55px 0 80px -15px;
+  }
+
+  .news {
+    padding: 70px 0 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 25px 0 0 0;
+  }
+
+  .intro__inner {
+    height: calc(100vh - 59/5px);
+  }
+
+  .header__btn {
+    width: 23px;
+  }
+
+  .header__btn.active+.header__logo {
+    margin: 0 auto;
+  }
+
+  .header__btn::after {
+    width: 14px;
+  }
+
+  .header__contact {
+    padding: 10px 13px;
+    font-size: 1rem;
+  }
+
+  .header__logo {
+    max-width: 92px;
+    height: 27px;
+  }
+
+  .header__menu {
+    padding: 75px 0 150px;
+  }
+
+  .header__list>li:last-child {
+    width: fit-content;
+    margin: 70px auto 0;
+    margin-left: auto;
+    padding: 11px 19px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 125.1%;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #E94D6E;
+    border-radius: 30px;
+  }
+
+  .intro__inner {
+    position: relative;
+    flex-direction: column-reverse;
+  }
+
+  .intro__right {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    min-width: 320px;
+    max-width: 320px;
+    height: 320px;
+  }
+
+  .intro__text span:last-child {
+    bottom: -30px;
+    right: -10px;
+  }
+
+  .intro__text {
+    font-size: 28rem;
+  }
+
+  .intro__left {
+    padding: 0;
+  }
+
+  .intro {
+    padding: 0 0 70px 0;
+    overflow: hidden;
+  }
+
+  .intro__inner::before {
+    bottom: -10%;
+    right: -129%;
+    width: 800px;
+    height: 400px;
+    opacity: .4;
+  }
+
+  .aprroach__item {
+    width: 100%;
+    margin: 0 0 54px 30px;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .aprroach__list {
+    margin: 30px 0 0 -30px;
+
+    br {
+      display: none;
+    }
+
+    p {
+      max-width: 100%;
+    }
+  }
+
+  .services__item,
+  .services__item:nth-child(odd) {
+    margin: 60px 0 0 0;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .services__img {
+    margin: 0 0 40px 0;
+    flex: 0 0 218px;
+    max-width: 100%;
+    border-radius: 10px !important;
+  }
+
+  .services__info,
+  .services__item:nth-child(odd) .services__info {
+    padding: 0;
+    margin: 0 0 30px 0;
+    max-width: 100%;
+  }
+
+  .services__item:nth-child(odd) .services__info h3,
+  .services__item:nth-child(odd) .services__info p {
+    text-align: left;
+  }
+
+  .aprroach {
+    padding: 65px 0 25px;
+  }
+
+  .services {
+    padding: 25px 0 40px;
+  }
+
+  .services__info h3 {
+    font-size: 2.5rem;
+  }
+
+  .reviews .container .btn {
+    top: auto;
+    bottom: -125px;
+    right: 50%;
+    transform: translateX(50%);
+
+  }
+
+  .slider-one .slick-dots {
+    bottom: -35px;
+  }
+
+  .reviews {
+    padding: 30px 0 160px;
+  }
+
+  .slider-one .slick-slide {
+    margin: 0;
+  }
+
+  .news__list .slick-dots {
+    bottom: -37px;
+  }
+
+  .footer {
+    padding: 98px 0 50px 0;
+  }
+
+  .footer__box {
+    flex-direction: column;
+    margin: 0 0 95px 26%;
+  }
+
+  .footer__box p {
+    width: 210px;
+  }
+
+  .footer__box .link {
+    margin: 40px 0 0 0;
+  }
+
+  .footer__title {
+    margin: 0 0 28px 0;
+    font-size: 4rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__logo {
+    margin: 0 0 20px 0;
+    max-width: 145px;
+    height: 45px;
+  }
+
+  .footer::after {
+    bottom: auto;
+    top: 5%;
+    right: 7%;
+    width: 500px;
+    height: 350px;
+  }
+
+}
