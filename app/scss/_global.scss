@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
+  font-size: 10px;
 }
 
 *,
@@ -43,6 +44,7 @@ body {
   background-color: #000000;
   color: rgba(255, 255, 255, 0.6);
   font-family: 'Poppins', sans-serif;
+
 }
 
 body.lock {
@@ -72,3 +74,43 @@ body.lock {
 }
 
 /*end pin footer to bottom*/
+
+.title {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 110%;
+  color: #2A2A2A;
+
+  &--sub {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 110%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+}
+
+.link {
+  position: relative;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 140%;
+  color: #E94D6E;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -55px;
+    background-image: url("../images/dest/icons/arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: linear .2s;
+    width: 40px;
+    height: 10px;
+    transition: linear .2s;
+  }
+}

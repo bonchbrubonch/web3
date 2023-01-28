@@ -1,0 +1,163 @@
+.slider-one {
+  &__item {
+    padding: 30px 30px 30px 30px;
+    background-color: #FDFDFD;
+    border: 1px solid #F3F3F3;
+    border-radius: 6px;
+
+    p {
+      margin: 0 0 30px 0;
+      font-family: 'Helvetica', sans-serif;
+      font-weight: 300;
+      font-size: 1.4rem;
+      line-height: 130%;
+      color: #747474;
+      
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -ms-line-clamp: 5;
+      -webkit-line-clamp: 5;
+      line-clamp: 5;
+      display: -webkit-box;
+      display: box;
+      word-wrap: break-word;
+      -webkit-box-orient: vertical;
+      box-orient: vertical;
+    }
+
+    a {
+      color: #E94D6E;
+      font-weight: 700;
+    }
+  }
+
+  &__top {
+    margin: 0 0 25px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar {
+    margin: 0 20px 0 0;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+
+  &__top-box {
+    display: flex;
+    flex-direction: column;
+
+    strong {
+      display: block;
+      margin: 0 0 5px 0;
+      font-weight: 600;
+      font-size: 1.7rem;
+      line-height: 135%;
+      color: #282828;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 1.1rem;
+      line-height: 130%;
+      color: #BCBCBC;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #BCBCBC;
+  }
+
+  &__date {
+    display: flex;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 130%;
+
+
+    span {
+      display: block;
+      margin: 0 0 0 10px;
+    }
+  }
+
+  .slick-arrow {
+    padding: 0;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-image: url("../images/dest/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 0;
+    position: absolute;
+    bottom: -73px;
+    transition: linear .2s;
+    &:hover{
+      opacity: .8;
+    }
+  }
+
+  .slick-next {
+    transform: rotate(-90deg);
+    right: 0;
+  }
+
+  .slick-prev {
+    transform: rotate(90deg);
+    left: 0;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: -52px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .slick-dots li {
+    display: inline-block;
+  }
+
+  .slick-dots li+li {
+    margin: 0 0 0 10px;
+  }
+
+  .slick-dots button {
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    font-size: 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .slick-dots li.slick-active button {
+    background-color: #E94D6E;
+  }
+
+  .slick-slide {
+    margin: 0 8px;
+  }
+}
