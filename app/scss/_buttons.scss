@@ -10,6 +10,9 @@
   background-color: #E94D6E;
   border-radius: 30px;
   transition: linear .2s;
+  cursor: pointer;
+  outline: none;
+  border: none;
   &:hover{
     background-color: #C93453;
   }

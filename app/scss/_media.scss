@@ -1,6 +1,6 @@
 @media (min-width: 2000px) {
   html {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .container,
@@ -26,11 +26,13 @@
     width: 80px;
     height: 30px;
   }
+
   .header__btn.active span {
     position: absolute;
     top: 50%;
     left: 15px;
   }
+
   .header__btn::after {
     width: 49px;
   }
@@ -48,11 +50,32 @@
   .intro__title {
     font-size: 4rem;
   }
+
+  .intro--daps .intro__left {
+    padding: 12% 0 0 0;
+  }
+
+  .stack li {
+    min-height: 18vh;
+  }
+
+  .stack__list-img img {
+    height: auto;
+    width: 8vw;
+  }
+
+  .gallery__item {
+    height: 55vh;
+  }
+
+  .header__item-child>ul li::after {
+    top: 46%;
+  }
 }
 
 @media (min-width: 2500px) {
   html {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .container {
@@ -75,10 +98,26 @@
   }
 
   .intro__right {
-    left: 0;
+    min-width: auto;
+    right: 0;
     top: 10%;
-    min-width: 420px;
+    width: 420px;
     height: 414px;
+  }
+
+  .fancybox-slide--html .fancybox-close-small {
+    right: 10px;
+    top: 10px;
+  }
+
+  .modal {
+    padding: 100px 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .modal__inner {
+    height: auto;
   }
 }
 
@@ -100,8 +139,7 @@
   }
 
   .intro__right {
-
-    min-width: 345px;
+    width: 340px;
     height: 325px;
   }
 
@@ -116,15 +154,42 @@
   .news {
     padding: 70px 0 40px;
   }
+
+  .page-404__left h1 {
+    font-size: 4rem;
+  }
+
+  .modal__left h1 {
+    font-size: 4rem;
+  }
+
+  .modal__content {
+    flex-direction: column;
+  }
+
+  .modal__left {
+    margin: 0 0 35px 0;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .modal__send h2 {
+    margin: 0 0 30px 0;
+    font-size: 4rem;
+  }
+
+  .works li {
+    width: calc(50% - 15px);
+  }
+
+  .types__item {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 700px) {
   .header {
     padding: 25px 0 0 0;
-  }
-
-  .intro__inner {
-    height: calc(100vh - 59/5px);
   }
 
   .header__btn {
@@ -200,11 +265,11 @@
   }
 
   .intro__inner::before {
-    bottom: -10%;
-    right: -129%;
-    width: 800px;
-    height: 400px;
-    opacity: .4;
+    background-image: url("../images/dest/icons/intro-bgMob.svg");
+    bottom: -31%;
+    right: -298px;
+    width: 508px;
+    height: 520px;
   }
 
   .aprroach__item {
@@ -326,9 +391,137 @@
   .footer::after {
     bottom: auto;
     top: 5%;
-    right: 7%;
+    right: -30%;
     width: 500px;
     height: 350px;
   }
 
+  .page-404__inner {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .page-404__right {
+    font-size: 15rem;
+  }
+
+  .page-404__inner {
+    padding: 25% 0 25% 0;
+    height: 100%;
+  }
+
+  .page-404__left {
+    width: 100%;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .form__choice {
+    padding: 10px 10px;
+  }
+
+  .intro--daps .intro__left {
+    padding: 0 0 10% 0;
+  }
+
+  .works {
+    padding: 100px 0 50px;
+  }
+
+  .works__list {
+    margin: 70px 20px 0 -15px;
+  }
+
+  .works li {
+    width: 100%;
+    margin: 0 0 65px 15px;
+  }
+
+  .works li:last-child {
+    margin: 0 0 0 15px;
+  }
+
+  .stack {
+    padding: 50px 0 35px;
+  }
+
+  .stack li {
+    width: calc(50% - 15px);
+  }
+
+  .stack__list {
+    margin: 30px 0 0 -15px;
+  }
+
+  .gallery {
+    padding: 50px 0 150px;
+  }
+
+  .gallery__box {
+    flex-direction: column;
+  }
+
+  .gallery__item {
+    width: 100%;
+  }
+
+  .gallery__inner {
+    max-width: 500px;
+    margin: 30px auto 0;
+  }
+
+  .gallery .container .btn {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -105px;
+    top: auto;
+  }
+
+  .types {
+    padding: 55px 0 25px;
+  }
+
+  .types__inner {
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0 0 0;
+  }
+
+  .types .types__item+.types__item {
+    margin: 20px 0 0 0;
+  }
+
+  .types__item {
+    width: 100%;
+  }
+
+  .types__item:first-child span {
+    margin: 0;
+  }
+}
+
+@media (max-width: 468px) {
+  .form__choice {
+    font-size: 1.1rem;
+    padding: 10px 7px;
+  }
+
+  .form .form__choice+.form__choice {
+    margin: 0 0 0 10px;
+  }
+
+  .intro__title {
+    font-size: 3rem;
+  }
+
+  .stack li {
+    width: 100%;
+  }
+}
+
+@media (max-height: 450px) {
+  .intro__inner {
+    padding-top: 15%;
+    height: 100%;
+  }
 }
