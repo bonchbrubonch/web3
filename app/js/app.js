@@ -14,6 +14,11 @@ $(function () {
   });
   /*end header========*/
 
+  $(".projects__btn").on("click", function () {
+    $(".projects__btn").removeClass("active");
+    $(this).addClass("active");
+  });
+
   $(".form__choice").on("click", function () {
     $(".form__choice").removeClass("active");
     $(this).addClass("active");
