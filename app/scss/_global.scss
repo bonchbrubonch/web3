@@ -92,6 +92,7 @@ body.lock {
 }
 
 .link {
+  padding: 0 60px 0 0;
   position: relative;
   font-weight: 700;
   font-size: 2rem;
@@ -103,15 +104,20 @@ body.lock {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: -55px;
+    right: 0;
     background-image: url("../images/dest/icons/arrow.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     transition: linear .2s;
     width: 40px;
-    height: 10px;
+    height: 8px;
     transition: linear .2s;
+  }
+  &:hover{
+    &::after{
+      right: -10px;
+    }
   }
 }
 
@@ -135,7 +141,7 @@ body.lock {
   li {
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 20px;
     line-height: 123.6%;
     color: #E94D6E;
     display: flex;

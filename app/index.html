@@ -28,7 +28,6 @@
 <body>
   <div class="wrapper">
     <div class="content">
-
       <div class="box-bg">
         <header class="header">
           <div class="container">
@@ -39,13 +38,20 @@
               <a href="#" class="header__logo">
                 <img src="images/dest/icons/logo.svg" alt="logo">
               </a>
-              <a href="#" class="header__contact">
+              <a href="#" class="header__contact" data-fancybox data-src="#modal-1">
                 Contact us
               </a>
             </div>
           </div>
+
           <div class="header__menu">
             <div class="container">
+              <div class="header__menu-inner">
+                <button class="header__menu-close"></button>
+                <a href="#" class="header__menu-logo">
+                  <img src="images/dest/icons/logo.svg" alt="logo">
+                </a>
+              </div>
               <ul class="header__list">
                 <li>
                   <a href="#"><span>Home</span></a>
@@ -372,7 +378,7 @@
           <h3 class="title">
             Latest News
           </h3>
-          <ul class="news__list">
+          <ul class="news__list news-slide">
             <li class="news__item">
               <div class="news__img">
                 <img src="images/dest/main/news-1.jpg" alt="news logo">
@@ -450,7 +456,37 @@
       </div>
     </footer>
   </div>
-
+  <div id="modal-1" class="modal">
+    <div class="modal__inner">
+      <div class="modal__content">
+        <div class="modal__left">
+          <h1>Let’s connect</h1>
+          <p>We are open to any question you want to ask. Feel free to text anytime:)
+          </p>
+        </div>
+        <div class="modal__right">
+          <p>Select service you’re interested in:</p>
+          <form class="form">
+            <div class="form__top">
+              <div class="form__choice">Design</div>
+              <div class="form__choice">Web Developent</div>
+              <div class="form__choice active">Web 3 Daapps</div>
+            </div>
+            <div class="form__input-wrap">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form__input-wrap">
+              <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form__input-wrap">
+              <input type="text" placeholder="Tell us about your project" required>
+            </div>
+            <button class="btn">Send request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
