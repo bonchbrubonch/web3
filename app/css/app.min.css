@@ -1392,24 +1392,13 @@ body.lock {
 }
 
 .intro__right {
-  position: absolute;
+  margin: 0 0 0 -190px;
+  position: relative;
+  width: 580px;
+  height: 492px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   z-index: -2;
-  right: 1px;
-  min-width: 620px;
-  height: 650px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .intro__right video {
@@ -1420,31 +1409,20 @@ body.lock {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -1;
 }
 
-.intro__text {
+.intro__right::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background: #000;
-  width: 101%;
-  height: 101%;
-  text-align: center;
-  font-size: 530px;
-  line-height: 100%;
-  mix-blend-mode: darken;
-}
-
-.intro__text span:first-child {
-  position: absolute;
-  top: -10px;
-  left: 0;
-}
-
-.intro__text span:last-child {
-  position: absolute;
-  bottom: -8px;
-  right: 2px;
+  bottom: 0;
+  right: 0;
+  background-image: url("../images/dest/main/intro-space.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*end intro=======*/
@@ -2478,16 +2456,6 @@ body.lock {
   .intro__inner::before {
     bottom: 0;
   }
-  .intro__text {
-    font-size: 35rem;
-  }
-  .intro__right {
-    min-width: auto;
-    right: 0;
-    top: 10%;
-    width: 420px;
-    height: 414px;
-  }
   .fancybox-slide--html .fancybox-close-small {
     right: 10px;
     top: 10px;
@@ -2514,13 +2482,6 @@ body.lock {
   }
   .intro__title {
     font-size: 4rem;
-  }
-  .intro__text {
-    font-size: 28rem;
-  }
-  .intro__right {
-    width: 340px;
-    height: 325px;
   }
   .aprroach__item {
     width: calc(50% - 30px);
@@ -2638,24 +2599,19 @@ body.lock {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .intro__right {
-    position: absolute;
-    top: 12%;
-    left: 0;
-    min-width: 320px;
-    max-width: 320px;
-    height: 320px;
-  }
-  .intro__text span:last-child {
-    bottom: -30px;
-    right: -10px;
-  }
-  .intro__text {
-    font-size: 28rem;
-  }
   .intro {
-    padding: 0 0 70px 0;
+    padding: 100px 0 70px 0;
     overflow: hidden;
+  }
+  .intro__right {
+    margin: 0;
+    width: 320px;
+    height: 271px;
+  }
+  .intro__left {
+    -webkit-transform: translateY(-77px);
+        -ms-transform: translateY(-77px);
+            transform: translateY(-77px);
   }
   .intro__left p {
     margin: 10px 0 30px 0 !important;
@@ -2807,9 +2763,6 @@ body.lock {
   }
   .form__choice {
     padding: 10px 10px;
-  }
-  .intro__left {
-    padding: 5% 0 24% 0;
   }
   .works {
     padding: 100px 0 50px;
@@ -3000,9 +2953,6 @@ body.lock {
   }
   .form .form__choice + .form__choice {
     margin: 0 0 0 10px;
-  }
-  .intro__title {
-    font-size: 3rem;
   }
   .stack li {
     width: 100%;

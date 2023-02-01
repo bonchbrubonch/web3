@@ -366,16 +366,12 @@
   }
 
   &__right {
-    position: absolute;
+    margin: 0 0 0 -190px;
+    position: relative;
+    width: 580px;
+    height: 492px;
+    flex-shrink: 0;
     z-index: -2;
-    right: 1px;
-    min-width: 620px;
-    height: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
     video {
       position: absolute;
       top: 0;
@@ -383,31 +379,19 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      z-index: -1;
     }
-  }
-
-  &__text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #000;
-    width: 101%;
-    height: 101%;
-    text-align: center;
-    font-size: 530px;
-    line-height: 100%;
-    mix-blend-mode: darken;
-
-    span:first-child {
+    &::before{
+      content: "";
       position: absolute;
-      top: -10px;
+      top: 0;
       left: 0;
-    }
-
-    span:last-child {
-      position: absolute;
-      bottom: -8px;
-      right: 2px;
+      bottom: 0;
+      right: 0;
+      background-image: url("../images/dest/main/intro-space.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }

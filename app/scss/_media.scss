@@ -97,18 +97,6 @@
     bottom: 0;
   }
 
-  .intro__text {
-    font-size: 35rem;
-  }
-
-  .intro__right {
-    min-width: auto;
-    right: 0;
-    top: 10%;
-    width: 420px;
-    height: 414px;
-  }
-
   .fancybox-slide--html .fancybox-close-small {
     right: 10px;
     top: 10px;
@@ -140,15 +128,6 @@
 
   .intro__title {
     font-size: 4rem;
-  }
-
-  .intro__text {
-    font-size: 28rem;
-  }
-
-  .intro__right {
-    width: 340px;
-    height: 325px;
   }
 
   .aprroach__item {
@@ -282,29 +261,19 @@
     align-items: flex-start;
   }
 
-  .intro__right {
-    position: absolute;
-    top: 12%;
-    left: 0;
-    min-width: 320px;
-    max-width: 320px;
-    height: 320px;
-  }
-
-  .intro__text span:last-child {
-    bottom: -30px;
-    right: -10px;
-  }
-
-  .intro__text {
-    font-size: 28rem;
-  }
-
   .intro {
-    padding: 0 0 70px 0;
+    padding: 100px 0 70px 0;
     overflow: hidden;
   }
 
+  .intro__right {
+    margin: 0;
+    width: 320px;
+    height: 271px;
+  }
+  .intro__left{
+    transform: translateY(-77px);
+  }
   .intro__left p {
     margin: 10px 0 30px 0 !important;
   }
@@ -465,10 +434,6 @@
 
   .form__choice {
     padding: 10px 10px;
-  }
-
-  .intro__left {
-    padding: 5% 0 24% 0;
   }
 
   .works {
@@ -693,10 +658,6 @@
 
   .form .form__choice+.form__choice {
     margin: 0 0 0 10px;
-  }
-
-  .intro__title {
-    font-size: 3rem;
   }
 
   .stack li {
