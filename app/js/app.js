@@ -23,6 +23,11 @@ $(function () {
     $(this).addClass("active");
   });
 
+  $(".blog__btn").on("click", function () {
+    $(".blog__btn").removeClass("active");
+    $(this).addClass("active");
+  });
+
   $(".form__choice").on("click", function () {
     $(".form__choice").removeClass("active");
     $(this).addClass("active");
@@ -79,8 +84,8 @@ $(function () {
 
 
   $('[data-fancybox]').fancybox({
-    animationDuration : 600,
-    animationEffect   : 'slide-in-out'
+    animationDuration : 900,
+    // animationEffect : 'slide'
   });
 
 });
