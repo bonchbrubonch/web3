@@ -13,7 +13,7 @@ $(function () {
 
   $(".header__item-child p").on("click", function () {
     $(this).toggleClass('active');
-    $(this).next().slideToggle();
+    $(".header__item-child").toggleClass("active")
   });
 
   /*end header========*/
@@ -84,7 +84,7 @@ $(function () {
 
 
   $('[data-fancybox]').fancybox({
-    animationDuration : 900,
+    animationDuration : 1100,
     // animationEffect : 'slide'
   });
 
