@@ -93,6 +93,10 @@
 // }
 
 @media (max-width: 1100px) {
+  .box-bg::before {
+    background-size: cover;
+  }
+
   .intro__inner::before {
     bottom: 0;
   }
@@ -115,7 +119,8 @@
   .quote__inner {
     padding: 100px 0 100px;
   }
-  .services__img{
+
+  .services__img {
     flex-shrink: 0;
   }
 }
@@ -296,10 +301,10 @@
   .box-bg::before {
     background-image: url("../images/dest/icons/intro-bgMob.svg");
     top: auto;
-    bottom: 1%;
-    right: -298px;
-    width: 593px;
-    height: 520px;
+    bottom: 10%;
+    right: -381px;
+    width: 710px;
+    height: 566px;
   }
 
   .aprroach__item {
@@ -662,8 +667,9 @@
   .blog .news__list {
     margin: 0 0 10px -15px;
   }
-  .header__menu.active{
-    .header__menu-logo{
+
+  .header__menu.active {
+    .header__menu-logo {
       display: none;
     }
   }
