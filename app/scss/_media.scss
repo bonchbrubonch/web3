@@ -160,8 +160,22 @@
     font-size: 4rem;
   }
 
+  .fancybox-slide--html .fancybox-close-small {
+    right: auto;
+    left: 10px;
+    top: 20px;
+  }
+
   .modal__left h1 {
     font-size: 4rem;
+    margin: 0 0 30px 0;
+  }
+
+  .modal__right p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 135%;
   }
 
   .modal__content {
@@ -169,7 +183,7 @@
   }
 
   .modal__left {
-    margin: 0 0 35px 0;
+    margin: 0 0 50px 0;
     width: 100%;
   }
 
@@ -723,8 +737,16 @@
   .header__menu-logo {
     display: none;
   }
-  .form .btn{
-    font-size: 1.4rem;
+
+  .form .btn {
+    margin: 80px auto 0 auto;
+    font-size: 1.5rem;
+    line-height: 125%;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000;
+    border: 1px solid #E94D6E;
+    border-radius: 30px;
   }
 }
 
