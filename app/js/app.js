@@ -3,16 +3,14 @@ $(function () {
   /*start header========*/
   $(".header__btn").on("click", function () {
     $(".header__menu").addClass("active");
-    $("body").addClass("lock");
   });
 
   $(".header__menu-close").on("click", function () {
     $(".header__menu").removeClass("active");
-    $("body").removeClass("lock");
   });
 
   $(".header__item-child p").on("click", function () {
-    $(this).toggleClass('active');
+    $(this).next().slideToggle();
     $(".header__item-child").toggleClass("active")
   });
 
@@ -84,8 +82,9 @@ $(function () {
 
 
   $('[data-fancybox]').fancybox({
-    animationDuration : 1100,
-    // animationEffect : 'slide'
+    animationDuration: 1000,
   });
+
+
 
 });

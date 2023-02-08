@@ -46,6 +46,7 @@
     cursor: pointer;
 
     span {
+      display: block;
       position: absolute;
       top: 50%;
       left: 0;
@@ -84,6 +85,7 @@
     max-width: 150px;
     width: 100%;
     height: 45px;
+
     img {
       width: 100%;
       height: 100%;
@@ -122,7 +124,8 @@
     background-repeat: no-repeat;
     background-position: center;
     transition: linear .2s;
-    &::bef{
+
+    &::before {
       display: none;
     }
   }
@@ -174,7 +177,7 @@
       content: "";
       position: absolute;
       background-color: #fff;
-      width: 100%;
+      width: 29px;
       height: 3px;
       border-radius: 5px;
     }
@@ -237,28 +240,30 @@
   }
 
   &__item-child>ul {
-    height: 0;
-    opacity: 0;
-    transition: linear .2s;
+    display: none;
+    margin: 35px 0 10px 55px;
+
     li {
       position: relative;
+      padding: 0 0 0 25px;
       margin: 0 0 3px 0;
       font-weight: 400;
-      font-size: 0;
-      line-height: 0;
+      font-size: 2.1rem;
+      line-height: 160%;
       color: #fff;
       transition: linear .2s;
+
       &::after {
         content: "";
         position: absolute;
         top: 12px;
-        left: -25px;
+        left: 0;
         background-color: #4c4c4c;
         width: 5px;
         height: 5px;
         border-radius: 50%;
       }
-      
+
     }
 
     span {
@@ -286,19 +291,7 @@
     }
   }
 
-  &__item-child.active>ul {
-    opacity: 1;
-    margin: 35px 0 10px 80px;
-    height: 100%;
-
-    li {
-      font-size: 2.1rem;
-      line-height: 160%;
-    }
-  }
-
-
-  p.active {
+  &__item-child.active {
     .header__arrow {
       transform: rotate(180deg);
     }
@@ -703,12 +696,14 @@
 
 
 /*start 404==============*/
-.page-404 {
+.content.content--page-404 {
   background-image: url("../images/src/icons/404-bg.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+}
 
+.page-404 {
   &__inner {
     height: calc(100vh - 75px);
     display: flex;
@@ -863,25 +858,22 @@
   }
 
   &__box:nth-child(odd) {
-    .gallery__item:nth-child(even) {
+    .gallery__item-wrapper:nth-child(even) {
       width: calc(105% - 15px);
     }
   }
 
-  &__item {
+  &__item-wrapper {
+    position: relative;
     display: flex;
     align-items: end;
-    padding: 15px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     width: calc(50% - 15px);
     height: 100%;
     margin: 0 0 15px 15px;
     height: 300px;
-    border-radius: 6px;
-    overflow: hidden;
+    border-radius: 8px;
+    overflow: hidden !important;
 
     &::before {
       content: "";
@@ -896,10 +888,30 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+
+    &:hover {
+      .gallery__item {
+        transform: scale(1.07);
+      }
+    }
+  }
+
+  &__item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: linear .2s;
+    border-radius: 8px;
+    overflow: hidden !important;
   }
 
   &__bottom {
-    position: relative;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
     z-index: 2;
 
     h6 {
@@ -1245,6 +1257,8 @@
   padding: 35px 0 20px;
 
   &__btns {
+    position: relative;
+    z-index: 50;
     margin: 0 0 70px -20px;
 
     .projects__btns {

@@ -1,28 +1,18 @@
 .slider-one {
   &__item {
+    position: relative;
     padding: 30px 30px 30px 30px;
     background-color: #FDFDFD;
     border: 1px solid #F3F3F3;
     border-radius: 6px;
 
     p {
-      margin: 0 0 30px 0;
+      margin: 0 0 40px 0;
       font-family: 'Helvetica', sans-serif;
       font-weight: 300;
       font-size: 1.4rem;
       line-height: 130%;
       color: #747474;
-      
-      text-overflow: ellipsis;
-      overflow: hidden;
-      -ms-line-clamp: 5;
-      -webkit-line-clamp: 5;
-      line-clamp: 5;
-      display: -webkit-box;
-      display: box;
-      word-wrap: break-word;
-      -webkit-box-orient: vertical;
-      box-orient: vertical;
     }
 
     a {
@@ -74,6 +64,10 @@
   }
 
   &__bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +103,8 @@
     position: absolute;
     bottom: -73px;
     transition: linear .2s;
-    &:hover{
+
+    &:hover {
       opacity: .8;
     }
   }
@@ -124,11 +119,19 @@
     left: 0;
   }
 
-  
+  .slick-track {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
   .slick-slide {
     margin: 0 8px;
+    height: auto;
   }
 }
+
+
 
 .slick-dots {
   position: absolute;
