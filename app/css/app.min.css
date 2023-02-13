@@ -1776,7 +1776,7 @@ body {
 /*start 404==============*/
 .content.content--page-404 {
   background-image: url("../images/src/icons/404-bg.svg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
