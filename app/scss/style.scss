@@ -1184,13 +1184,13 @@
   }
 
   &__img {
-    width: 865px;
+    width: 655px;
     height: 445px;
     border-radius: 170px;
     overflow: hidden;
-
+    border-radius: 169px 0 0 169px;
     img {
-      width: 100%;
+      width: 865px;
       height: 100%;
       object-fit: cover;
       object-position: center;

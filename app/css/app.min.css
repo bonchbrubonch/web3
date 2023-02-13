@@ -2305,14 +2305,15 @@ body {
 }
 
 .articl-intro__img {
-  width: 865px;
+  width: 655px;
   height: 445px;
   border-radius: 170px;
   overflow: hidden;
+  border-radius: 169px 0 0 169px;
 }
 
 .articl-intro__img img {
-  width: 100%;
+  width: 865px;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -2540,6 +2541,9 @@ body {
 }
 
 @media (max-width: 900px) {
+  .articl-intro__img img {
+    width: 100%;
+  }
   .header__menu-inner {
     padding: 0 140px 0 0;
   }
@@ -3085,6 +3089,9 @@ body {
     left: -1px;
     bottom: -1px;
     right: -1px;
+  }
+  .articl-intro.articl-intro--blog {
+    height: auto;
   }
 }
 

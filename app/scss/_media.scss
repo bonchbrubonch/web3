@@ -127,6 +127,9 @@
 }
 
 @media (max-width: 900px) {
+  .articl-intro__img img{
+    width: 100%;
+  }
   .header__menu-inner {
     padding: 0 140px 0 0;
   }
@@ -747,6 +750,9 @@
     left: -1px;
     bottom: -1px;
     right: -1px;
+  }
+  .articl-intro.articl-intro--blog{
+    height: auto;
   }
 }
 
