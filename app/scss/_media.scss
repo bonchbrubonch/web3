@@ -742,6 +742,12 @@
   .intro__inner {
     align-items: center;
   }
+  .intro__right::before {
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+  }
 }
 
 @media (max-width: 468px) {
@@ -779,7 +785,7 @@
   }
 }
 
-@media (min-height: 600px) and (max-width: 700px){
+@media (min-height: 600px) and (max-width: 700px) {
   .intro__left {
     transform: translateY(-30%);
   }
@@ -798,6 +804,20 @@
     font-size: 4rem;
     line-height: 110%;
     margin: 0 0 15% 0;
+  }
+
+  .intro__right {
+    width: 210px;
+    height: 184px;
+  }
+
+  .intro__title {
+    font-size: 3rem;
+  }
+
+  .intro__left {
+    max-width: 235px;
+    transform: translateY(-24%);
   }
 }
 

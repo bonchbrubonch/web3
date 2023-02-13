@@ -3080,6 +3080,12 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .intro__right::before {
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+  }
 }
 
 @media (max-width: 468px) {
@@ -3130,6 +3136,19 @@ body {
     font-size: 4rem;
     line-height: 110%;
     margin: 0 0 15% 0;
+  }
+  .intro__right {
+    width: 210px;
+    height: 184px;
+  }
+  .intro__title {
+    font-size: 3rem;
+  }
+  .intro__left {
+    max-width: 235px;
+    -webkit-transform: translateY(-24%);
+        -ms-transform: translateY(-24%);
+            transform: translateY(-24%);
   }
 }
 
