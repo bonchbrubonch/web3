@@ -16,6 +16,10 @@ $(function () {
 
   /*end header========*/
 
+  $(".slider-one__read-more").on("click", function () {
+    $(this).parent().addClass("active");
+  });
+
   $(".projects__btn").on("click", function () {
     $(".projects__btn").removeClass("active");
     $(this).addClass("active");
