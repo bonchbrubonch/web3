@@ -30,9 +30,9 @@
     }
 
     p.active {
-      -ms-line-clamp: 200;
-      -webkit-line-clamp: 200;
-      line-clamp: 200;
+      -ms-line-clamp: 100;
+      -webkit-line-clamp: 100;
+      line-clamp: 100;
       .slider-one__read-more{
         display: none;
       }

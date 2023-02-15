@@ -336,9 +336,9 @@
     background-repeat: no-repeat;
     background-position: center;
     top: -122px;
-    right: -498px;
-    width: 864px;
-    height: 777px;
+    right: -559px;
+    width: 926px;
+    height: 855px;
     opacity: .7;
   }
 
@@ -722,7 +722,7 @@
       height: 840px;
     }
   }
-  
+
   .blog__btns {
     margin: -75px 0 260px -10px;
   }
@@ -847,6 +847,11 @@
   }
 }
 
+@media (min-height: 800px) and (max-height: 1100px) {
+  .intro {
+    padding: 6% 0 70px 0;
+  }
+}
 
 @media (max-height: 450px) {
   .intro {

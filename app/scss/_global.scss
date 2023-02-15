@@ -1,5 +1,5 @@
 .header__menu {
-  transform: translateY(-100%);
+  transform: translateY(-100%) !important;
   margin: 0 auto;
   margin: 0;
   position: fixed;
@@ -24,7 +24,7 @@
 }
 
 .header__menu.active {
-  transform: translateY(0);
+  transform: translateY(0) !important;
 }
 
 html {
