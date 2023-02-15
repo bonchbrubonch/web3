@@ -318,7 +318,7 @@
   }
 
   .intro {
-    padding: 70px 0 70px 0;
+    padding: 6% 0 70px 0;
     overflow: hidden;
   }
 
@@ -335,8 +335,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    top: -122px;
-    right: -559px;
+    top: -138px;
+    right: -568px;
     width: 926px;
     height: 855px;
     opacity: .7;
@@ -848,8 +848,23 @@
 }
 
 @media (min-height: 800px) and (max-height: 1100px) {
-  .intro {
-    padding: 6% 0 70px 0;
+  
+
+  .intro__down {
+    display: block;
+    margin: 43px 0 0 0;
+  }
+
+  .intro__left {
+    transform: translateY(-26%);
+  }
+
+  .intro__right::after {
+    top: -140px;
+    right: -559px;
+    width: 926px;
+    height: 855px;
+    opacity: 1;
   }
 }
 
