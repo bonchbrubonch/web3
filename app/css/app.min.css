@@ -698,6 +698,8 @@ body {
   height: 59px;
   border-radius: 50%;
   overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .slider-one__avatar img {
