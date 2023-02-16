@@ -7,7 +7,8 @@
     border-radius: 6px;
 
     p {
-      position: relative;
+      // font-family: monospace;
+      // position: relative;
       margin: 0 0 40px 0;
       font-family: 'Helvetica', sans-serif;
       font-weight: 300;
@@ -15,28 +16,28 @@
       line-height: 130%;
       color: #747474;
 
-      -ms-text-overflow: ellipsis;
-      -o-text-overflow: ellipsis;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      -ms-line-clamp: 5;
-      -webkit-line-clamp: 5;
-      line-clamp: 5;
-      display: -webkit-box;
-      display: box;
-      word-wrap: break-word;
-      -webkit-box-orient: vertical;
-      box-orient: vertical;
+      // -ms-text-overflow: ellipsis;
+      // -o-text-overflow: ellipsis;
+      // text-overflow: ellipsis;
+      // overflow: hidden;
+      // -ms-line-clamp: 5;
+      // -webkit-line-clamp: 5;
+      // line-clamp: 5;
+      // display: -webkit-box;
+      // display: box;
+      // word-wrap: break-word;
+      // -webkit-box-orient: vertical;
+      // box-orient: vertical;
     }
 
-    p.active {
-      -ms-line-clamp: 100;
-      -webkit-line-clamp: 100;
-      line-clamp: 100;
-      .slider-one__read-more{
-        display: none;
-      }
-    }
+    // p.active {
+    //   -ms-line-clamp: 100;
+    //   -webkit-line-clamp: 100;
+    //   line-clamp: 100;
+    //   .slider-one__read-more{
+    //     display: none;
+    //   }
+    // }
 
 
     a {
@@ -46,14 +47,14 @@
   }
 
   &__read-more {
-    padding: 0 0 5px 8px;
-    position: absolute;
+    padding: 0 0 0;
+    // position: absolute;
     cursor: pointer;
     top: 73px;
     right: 0;
     color: #E94D6E;
     font-weight: 700;
-    background-color: #fff;
+    background-color: transparent;
     outline: none;
     border: none;
   }
