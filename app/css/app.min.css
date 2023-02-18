@@ -1927,7 +1927,7 @@ body {
 }
 
 .stack li {
-  min-height: 110px;
+  height: 110px;
   padding: 30px;
   margin: 0 0 15px 15px;
   display: -webkit-box;
@@ -2653,6 +2653,7 @@ body {
   }
   .stack__list-img {
     width: 95%;
+    height: 100%;
   }
   .stack__list-img img {
     width: 100%;
@@ -3165,6 +3166,7 @@ body {
     margin: 0 -40px 0 auto;
   }
   .articl-intro__img {
+    border-radius: 170px 0 0 170px;
     width: 100%;
   }
   .articl-intro__img img {
