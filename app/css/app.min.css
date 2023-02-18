@@ -1306,16 +1306,15 @@ body {
 
 .header__item-child > ul {
   display: none;
-  margin: 35px 0 10px 55px;
 }
 
 .header__item-child > ul li {
   position: relative;
-  padding: 0 0 0 25px;
-  margin: 0 0 3px 0;
+  padding: 0 0 0 80px;
+  margin: 0;
   font-weight: 400;
   font-size: 2.1rem;
-  line-height: 160%;
+  line-height: 165%;
   color: #fff;
   -webkit-transition: linear .2s;
   -o-transition: linear .2s;
@@ -1326,7 +1325,7 @@ body {
   content: "";
   position: absolute;
   top: 12px;
-  left: 0;
+  left: 55px;
   background-color: #4c4c4c;
   width: 5px;
   height: 5px;
@@ -1355,6 +1354,16 @@ body {
 
 .header__item-child > ul span:hover::after {
   opacity: 1;
+}
+
+.header__item-child p {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.header__item-child.active p {
+  margin: 0 0 35px 0;
 }
 
 .header__item-child.active .header__arrow {
