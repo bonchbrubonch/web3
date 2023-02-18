@@ -1,5 +1,10 @@
 $(function () {
 
+  $(".header__item-child p").on("click", function () {
+    $(this).next().slideToggle();
+    $(".header__item-child").toggleClass("active")
+  });
+
   /*start header========*/
   $(".header__btn").on("click", function () {
     $(".header__menu").addClass("active");
@@ -8,14 +13,7 @@ $(function () {
   $(".header__menu-close").on("click", function () {
     $(".header__menu").removeClass("active");
   });
-
-  $(".header__item-child p").on("click", function () {
-    $(this).next().slideToggle();
-    $(".header__item-child").toggleClass("active")
-  });
-
   /*end header========*/
-
   // $(".slider-one__read-more").on("click", function () {
   //   $(this).parent().addClass("active");
   // });
@@ -87,8 +85,9 @@ $(function () {
 
   $('[data-fancybox]').fancybox({
     animationDuration: 1000,
+    touch: false
   });
 
-  
+
 
 });
