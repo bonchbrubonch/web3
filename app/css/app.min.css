@@ -819,7 +819,7 @@ body {
   background-image: url("../images/dest/icons/bg-menu.svg");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
 }
 
 .modal__inner {
