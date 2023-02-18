@@ -5,6 +5,8 @@ $(function () {
     $(".header__item-child").toggleClass("active")
   });
 
+
+
   /*start header========*/
   $(".header__btn").on("click", function () {
     $(".header__menu").addClass("active");
@@ -88,6 +90,5 @@ $(function () {
     touch: false
   });
 
-
-
 });
+
