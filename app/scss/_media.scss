@@ -252,7 +252,9 @@
 }
 
 @media (max-width: 700px) {
-
+  .intro--img .intro__left{
+    margin: 0;
+  }
   .modal,
   .content.content--page-404 {
     background-image: none;
@@ -331,7 +333,8 @@
     overflow: hidden;
   }
 
-  .intro__right {
+  .intro__right,
+  .intro__img-wrapper {
     margin: 0;
     width: 320px;
     height: 271px;
@@ -842,7 +845,8 @@
     margin: 0 0 15% 0;
   }
 
-  .intro__right {
+  .intro__right,
+  .intro__img-wrapper {
     width: 210px;
     height: 184px;
   }
