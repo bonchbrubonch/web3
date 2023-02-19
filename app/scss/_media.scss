@@ -340,7 +340,8 @@
     height: 271px;
   }
 
-  .intro__right::after {
+  .intro__right::after,
+  .intro__img-wrapper::after {
     content: "";
     position: absolute;
     background-image: url("../images/dest/icons/intro-bgMob.svg");
