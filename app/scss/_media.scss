@@ -109,10 +109,6 @@
     width: 100%;
   }
 
-  .modal__inner {
-    height: auto;
-  }
-
   #modal-2 .modal__inner {
     height: 100%;
   }
@@ -127,6 +123,9 @@
 }
 
 @media (max-width: 900px) {
+  .modal__inner {
+    height: auto;
+  }
   .articl-intro__img img {
     width: 100%;
   }
@@ -230,11 +229,15 @@
     font-size: 4rem;
     line-height: 110%;
   }
-
+  .articl-intro__right {
+    position: absolute;
+    top: 50%;
+    margin: 0 -110px 0 0;
+  }
   .articl-intro__img {
     width: 338px;
     height: 174px;
-    border-radius: 170px;
+    border-radius: 170px 0 0 170px;
   }
 
   .articl-intro__left {

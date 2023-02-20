@@ -2362,7 +2362,7 @@ body {
   width: 100%;
   border-radius: 170px;
   overflow: hidden;
-  border-radius: 36% 0 0 36%;
+  border-radius: 169px 0 0 169px;
 }
 
 .articl-intro__img img {
@@ -2372,7 +2372,7 @@ body {
      object-fit: cover;
   -o-object-position: bottom center;
      object-position: bottom center;
-  margin: 0 0 -1.5% 0;
+  margin: 0 0 -1.5% -5%;
 }
 
 .articl-content {
@@ -2569,9 +2569,6 @@ body {
     height: 100%;
     width: 100%;
   }
-  .modal__inner {
-    height: auto;
-  }
   #modal-2 .modal__inner {
     height: 100%;
   }
@@ -2585,6 +2582,9 @@ body {
 }
 
 @media (max-width: 900px) {
+  .modal__inner {
+    height: auto;
+  }
   .articl-intro__img img {
     width: 100%;
   }
@@ -2670,10 +2670,15 @@ body {
     font-size: 4rem;
     line-height: 110%;
   }
+  .articl-intro__right {
+    position: absolute;
+    top: 50%;
+    margin: 0 -110px 0 0;
+  }
   .articl-intro__img {
     width: 338px;
     height: 174px;
-    border-radius: 170px;
+    border-radius: 170px 0 0 170px;
   }
   .articl-intro__left {
     -ms-flex-negative: 1;

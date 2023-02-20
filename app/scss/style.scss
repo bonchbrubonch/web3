@@ -1233,14 +1233,14 @@
     width: 100%;
     border-radius: 170px;
     overflow: hidden;
-    border-radius: 36% 0 0 36%;
+    border-radius: 169px 0 0 169px;
 
     img {
       width: 120%;
       height: 120%;
       object-fit: cover;
       object-position: bottom center;
-      margin: 0 0 -1.5% 0;
+      margin: 0 0 -1.5% -5%;
     }
   }
 }
