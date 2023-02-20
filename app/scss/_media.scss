@@ -866,7 +866,7 @@
 }
 
 @media (max-height: 600px) {
-
+ 
   .intro__right::after {
     top: -145px;
     width: 765px;
@@ -905,6 +905,9 @@
 }
 
 @media (max-height: 450px) {
+  .modal__inner {
+    height: auto;
+  }
   .intro {
     padding: 15px 0 70px 0;
   }

@@ -3276,6 +3276,9 @@ body {
 }
 
 @media (max-height: 450px) {
+  .modal__inner {
+    height: auto;
+  }
   .intro {
     padding: 15px 0 70px 0;
   }
