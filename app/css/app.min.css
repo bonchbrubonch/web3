@@ -2694,6 +2694,16 @@ body {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .form .btn {
+    margin: 80px auto 0 auto;
+    font-size: 1.5rem;
+    line-height: 125%;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000;
+    border: 1px solid #E94D6E;
+    border-radius: 30px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -3150,16 +3160,6 @@ body {
   }
   .header__menu-logo {
     display: none;
-  }
-  .form .btn {
-    margin: 80px auto 0 auto;
-    font-size: 1.5rem;
-    line-height: 125%;
-    text-align: center;
-    color: #FFFFFF;
-    background-color: #000;
-    border: 1px solid #E94D6E;
-    border-radius: 30px;
   }
   .intro__inner {
     -webkit-box-align: center;
