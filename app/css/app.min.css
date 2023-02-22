@@ -1998,10 +1998,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.gallery__box:nth-child(odd) .gallery__item-wrapper:nth-child(even) {
-  width: calc(105% - 15px);
+.gallery__item-large {
+  width: calc(50% - 15px) !important;
 }
 
 .gallery__item-wrapper {
@@ -2013,7 +2015,7 @@ body {
       -ms-flex-align: end;
           align-items: end;
   position: relative;
-  width: calc(50% - 15px);
+  width: calc(25% - 15px);
   height: 100%;
   margin: 0 0 15px 15px;
   height: 300px;
@@ -2990,8 +2992,8 @@ body {
             flex-direction: column;
   }
   .gallery__item-wrapper,
-  .gallery__box:nth-child(odd) .gallery__item-wrapper:nth-child(even) {
-    width: 100%;
+  .gallery__item-large {
+    width: 100% !important;
     margin: 0 0 15px 0;
   }
   .gallery__inner {

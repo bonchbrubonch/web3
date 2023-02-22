@@ -575,8 +575,8 @@
   }
 
   .gallery__item-wrapper,
-  .gallery__box:nth-child(odd) .gallery__item-wrapper:nth-child(even) {
-    width: 100%;
+  .gallery__item-large{
+    width: 100% !important;
     margin: 0 0 15px 0;
   }
 
